@@ -1,78 +1,60 @@
-window.HELP_IMPROVE_VIDEOJS = false;
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.querySelector("[data-menu-button]");
+  const menu = document.querySelector("[data-menu]");
 
-var INTERP_BASE = "./static/interpolation/stacked";
-var NUM_INTERP_FRAMES = 240;
+  if (menuButton && menu) {
+    const closeMenu = () => {
+      menuButton.classList.remove("is-active");
+      menuButton.setAttribute("aria-expanded", "false");
+      menu.classList.remove("is-active");
+    };
 
-var interp_images = [];
-function preloadInterpolationImages() {
-  for (var i = 0; i < NUM_INTERP_FRAMES; i++) {
-    var path = INTERP_BASE + '/' + String(i).padStart(6, '0') + '.jpg';
-    interp_images[i] = new Image();
-    interp_images[i].src = path;
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.classList.toggle("is-active");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menu.classList.toggle("is-active", isOpen);
+    });
+
+    menu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
   }
-}
 
-function setInterpolationImage(i) {
-  var image = interp_images[i];
-  image.ondragstart = function() { return false; };
-  image.oncontextmenu = function() { return false; };
-  $('#interpolation-image-wrapper').empty().append(image);
-}
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const observedVideos = document.querySelectorAll("[data-observe-video]");
 
+  if (!reducedMotion && "IntersectionObserver" in window) {
+    const videoObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target;
+          if (entry.isIntersecting && video.muted && video.hasAttribute("data-autoplay")) {
+            video.play().catch(() => {});
+          } else if (!entry.isIntersecting && !video.paused) {
+            video.pause();
+          }
+        });
+      },
+      { rootMargin: "120px 0px", threshold: 0.35 }
+    );
 
-$(document).ready(function() {
-    // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function() {
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
+    observedVideos.forEach((video) => videoObserver.observe(video));
+  }
 
+  const copyButton = document.querySelector("[data-copy-citation]");
+  const citation = document.querySelector("#bibtex");
+
+  if (copyButton && citation) {
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(citation.textContent.trim());
+        copyButton.textContent = "Copied";
+        window.setTimeout(() => {
+          copyButton.textContent = "Copy BibTeX";
+        }, 1800);
+      } catch {
+        copyButton.textContent = "Select text to copy";
+      }
     });
-
-    var options = {
-			slidesToScroll: 1,
-			slidesToShow: 3,
-			loop: true,
-			infinite: true,
-			autoplay: false,
-			autoplaySpeed: 3000,
-    }
-
-		// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
-
-    // Loop on each carousel initialized
-    for(var i = 0; i < carousels.length; i++) {
-    	// Add listener to  event
-    	carousels[i].on('before:show', state => {
-    		console.log(state);
-    	});
-    }
-
-    // Access to bulmaCarousel instance of an element
-    var element = document.querySelector('#my-element');
-    if (element && element.bulmaCarousel) {
-    	// bulmaCarousel instance is available as element.bulmaCarousel
-    	element.bulmaCarousel.on('before-show', function(state) {
-    		console.log(state);
-    	});
-    }
-
-    /*var player = document.getElementById('interpolation-video');
-    player.addEventListener('loadedmetadata', function() {
-      $('#interpolation-slider').on('input', function(event) {
-        console.log(this.value, player.duration);
-        player.currentTime = player.duration / 100 * this.value;
-      })
-    }, false);*/
-    preloadInterpolationImages();
-
-    $('#interpolation-slider').on('input', function(event) {
-      setInterpolationImage(this.value);
-    });
-    setInterpolationImage(0);
-    $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
-
-    bulmaSlider.attach();
-
-})
+  }
+});

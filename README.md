@@ -1,16 +1,49 @@
-# Nerfies
+# STEMbot Paper Website
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+Project website for **“STEMbot: A Compliant Robot for Under-Canopy Plant
+Navigation,”** accepted to IROS 2026.
 
-If you find Nerfies useful for your work please cite:
+The site is a static single-page publication website built with HTML, CSS,
+vanilla JavaScript, and Bulma's layout utilities.
+
+## Local Preview
+
+Serve the repository root over HTTP:
+
+```bash
+python -m http.server 8000
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}
+
+Then open <http://localhost:8000>.
+
+## Media Build
+
+Author-provided source files live locally in:
+
+- `static/new_images/`
+- `static/new_videos/`
+- `static/paper/`
+
+These folders are intentionally ignored by Git. Generate the committed,
+browser-ready media set with:
+
+```bash
+./scripts/build_media.sh
 ```
 
-# Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+The script requires FFmpeg, FFprobe, and ImageMagick. It writes optimized
+figures, images, posters, H.264 videos, and the paper PDF to `static/media/`.
+
+## Publication TODOs
+
+- Replace the visible affiliation placeholder with author-approved text.
+- Add approved funding and acknowledgment language.
+- Replace the local presentation video link when the YouTube upload is ready.
+- Activate the code and arXiv links after public release.
+- Replace the provisional BibTeX entry with final proceedings metadata.
+
+## Website License
+
+This website is adapted from the
+[Nerfies project-page template](https://nerfies.github.io/) and is licensed
+under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

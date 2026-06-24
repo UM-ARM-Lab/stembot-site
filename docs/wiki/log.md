@@ -4,6 +4,15 @@ Newest entries appear first.
 
 ## 2026-06-24
 
+- Rebuilt the project-page content plan around the supplied manuscript and
+  authoritative source figures, with no PDF figure extraction.
+- Recorded the experiment mapping: Dracaena/1, Monstera/2, Ficus/3, and
+  Olea/4; plant images 1 and 4 are intentionally unused.
+- Added a reproducible pipeline for browser-safe figures, videos, posters, and
+  paper distribution assets.
+- Replaced inherited project content with a responsive STEMbot publication
+  narrative covering hardware, perception, planning, traversal, experiments,
+  presentation video, and provisional citation.
 - Updated the Git workflow to push completed, validated commits by default
   unless the user explicitly opts out; force-pushing remains prohibited.
 - Added an atomic Git commit workflow requiring `[codex]`-prefixed commit

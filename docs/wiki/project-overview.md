@@ -9,8 +9,9 @@ for Under-Canopy Plant Navigation.”**
 
 - The user reports that the paper was accepted to IROS 2026.
 - The work is associated with a pending provisional patent.
-- Conference venue spelling and all public-facing bibliographic details still
-  need validation against official or author-approved sources.
+- The conference location is Pittsburgh, Pennsylvania. Conference dates and
+  final proceedings metadata are not yet recorded.
+- The supplied manuscript and media have been author-cleared for public use.
 
 ## Publication Constraints
 
@@ -23,8 +24,10 @@ for Under-Canopy Plant Navigation.”**
 
 As of 2026-06-24:
 
-- `index.html` and `README.md` still contain Nerfies template content.
-- The site uses static HTML, CSS, JavaScript, images, and videos.
-- Untracked workspace assets exist under `.vscode/`, `static/new_images/`,
-  `static/new_videos/`, and `static/paper/`; their contents and publication
-  clearance have not been evaluated.
+- The website is a static single-page publication site using HTML, CSS,
+  JavaScript, and Bulma layout utilities.
+- Raw author-provided assets are local build inputs under
+  `static/new_images/`, `static/new_videos/`, and `static/paper/`.
+- Browser-ready derivatives are generated under `static/media/`.
+- The remaining visible publication TODOs are affiliations, funding and
+  acknowledgments, code release, arXiv link, and final BibTeX metadata.
