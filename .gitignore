@@ -1,2 +1,9 @@
 .DS_store
 .idea
+.vscode/
+
+# Author-provided source media. Web-ready derivatives are generated in
+# static/media/ by scripts/build_media.sh.
+static/new_images/
+static/new_videos/
+static/paper/
