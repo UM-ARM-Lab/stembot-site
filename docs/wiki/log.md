@@ -4,6 +4,8 @@ Newest entries appear first.
 
 ## 2026-06-24
 
+- Updated the Git workflow to push completed, validated commits by default
+  unless the user explicitly opts out; force-pushing remains prohibited.
 - Added an atomic Git commit workflow requiring `[codex]`-prefixed commit
   subjects, task-scoped staging, staged-diff review, and validation before
   commit.

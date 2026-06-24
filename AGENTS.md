@@ -113,7 +113,9 @@ Use a concise imperative commit subject beginning with `[codex]`, for example:
 ```
 
 Do not amend, rewrite, squash, delete, or force-push existing history unless the
-user explicitly requests it. Do not push commits unless the user asks.
+user explicitly requests it. After completing and validating the task, push
+new commits to the current branch's configured remote unless the user
+explicitly asks not to push. Use a normal push; never force-push.
 
 ## Wiki Maintenance Check
 
