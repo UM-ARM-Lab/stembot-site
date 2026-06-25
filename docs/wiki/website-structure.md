@@ -57,7 +57,12 @@ assets under `static/media/`.
 
 ## Open Publication Items
 
-- Affiliations remain a visible TODO.
+- All five authors are affiliated with the University of Michigan Department
+  of Robotics.
+- Zachary Charlick and Dmitry Berenson are additionally affiliated with the
+  Autonomous Robotic Manipulation Lab (ARM).
+- Nilay Roy Choudhury and Xiaonan Huang are additionally affiliated with the
+  Hybrid Dynamic Robotics Lab.
 - Funding and acknowledgment wording remains a visible TODO.
 - Code and arXiv are marked “Coming soon.”
 - No dataset-release link or patent-status wording is shown.

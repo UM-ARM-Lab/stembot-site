@@ -2,6 +2,15 @@
 
 Newest entries appear first.
 
+## 2026-06-25
+
+- Replaced the affiliation placeholder with linked Michigan Robotics, ARM Lab,
+  and Hybrid Dynamic Robotics Lab affiliations.
+- Recorded author mappings: all authors are affiliated with Michigan Robotics;
+  Zachary Charlick and Dmitry Berenson are also affiliated with ARM, while
+  Nilay Roy Choudhury and Xiaonan Huang are also affiliated with Hybrid Dynamic
+  Robotics.
+
 ## 2026-06-24
 
 - Rebuilt the project-page content plan around the supplied manuscript and

@@ -29,5 +29,5 @@ As of 2026-06-24:
 - Raw author-provided assets are local build inputs under
   `static/new_images/`, `static/new_videos/`, and `static/paper/`.
 - Browser-ready derivatives are generated under `static/media/`.
-- The remaining visible publication TODOs are affiliations, funding and
-  acknowledgments, code release, arXiv link, and final BibTeX metadata.
+- The remaining visible publication TODOs are funding and acknowledgments,
+  code release, arXiv link, and final BibTeX metadata.

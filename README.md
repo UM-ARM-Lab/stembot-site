@@ -36,7 +36,6 @@ figures, images, posters, H.264 videos, and the paper PDF to `static/media/`.
 
 ## Publication TODOs
 
-- Replace the visible affiliation placeholder with author-approved text.
 - Add approved funding and acknowledgment language.
 - Replace the local presentation video link when the YouTube upload is ready.
 - Activate the code and arXiv links after public release.
