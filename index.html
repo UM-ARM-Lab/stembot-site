@@ -110,7 +110,7 @@
             navigation under plant canopies. It integrates a fully geometric
             PIN-SLAM pipeline with a semantic OcTree, a manifold-constrained A*
             planner, and ray-tracing goal specification for branch-aware
-            traversal and inspection of occluded targets.
+            traversal and plant inspection.
           </p>
         </div>
 
@@ -121,7 +121,7 @@
           </article>
           <article class="metric-card">
             <strong>90°</strong>
-            <span>demonstrated branch junction</span>
+            <span>demonstrated branch traversal</span>
           </article>
           <article class="metric-card">
             <strong>50 mm</strong>
@@ -151,7 +151,7 @@
           <p class="section-kicker">Integrated system</p>
           <h2>Perception, planning, and control in one climbing platform</h2>
           <p>
-            Multi-rate stereo and time-of-flight sensing feed a geometric and
+            RGB-D vision builds a geometric and
             semantic representation of the plant. A receding-horizon planner
             searches that representation and dispatches discrete locomotion
             primitives to the robot.
@@ -174,7 +174,7 @@
       <div class="container is-max-widescreen">
         <div class="section-heading">
           <p class="section-kicker">Hardware</p>
-          <h2>Compliant grip without enclosing the stem</h2>
+          <h2>Compliant grip without fully enclosing the stem</h2>
         </div>
         <div class="feature-grid">
           <div class="feature-copy">
@@ -211,7 +211,7 @@
             <img src="./static/media/images/hardware-detail.jpg"
                  alt="Labeled exploded view of STEMbot components including motors, compliant wheels, camera, and time-of-flight sensor."
                  loading="lazy" width="1400" height="788">
-            <figcaption>Hardware component detail.</figcaption>
+            <figcaption>Exploded view, hardware component breakdown.</figcaption>
           </figure>
           <article class="video-card video-card-large">
             <video controls muted playsinline preload="none"
@@ -220,8 +220,7 @@
               <source src="./static/media/videos/assembly-overview.mp4" type="video/mp4">
             </video>
             <div class="video-card-copy">
-              <h3>Assembly overview</h3>
-              <p>A one-minute timelapse condensed from all four assembly recordings.</p>
+              <p>Assembly timelapse condensed to one minute.</p>
             </div>
           </article>
         </div>
@@ -265,7 +264,7 @@
               </video>
               <div class="video-card-copy">
                 <h4>Perception demonstration</h4>
-                <p>Traversable plant structure is separated from surrounding geometry.</p>
+                <p>Traversable plant structure is separated from surrounding geometry. Our bayesian mapping is robust to false negatives and occasional semantic misclassifications.</p>
               </div>
             </article>
           </div>
@@ -552,7 +551,7 @@
               <span>mean one-way Chamfer distance across live specimens</span>
             </div>
             <p>
-              The paper attributes the higher live-plant error to organic
+              Higher live-plant error is attributed to organic
               non-rigidity, biological growth between baseline and trial scans,
               and a semantic misclassification on the Monstera.
             </p>
@@ -565,7 +564,9 @@
             The planner assumes static plant geometry and does not yet choose
             inspection targets based on information gain. Accounting for
             bending or swaying plants and validating the system in in-situ
-            agricultural environments remain future work.
+            agricultural environments remain future work. Further experimentation is needed
+            to prove and improve reliability, and hardware iteration is required to untether
+            the robot.
           </p>
         </aside>
       </div>
@@ -590,7 +591,7 @@
       <div class="container is-max-desktop">
         <div class="section-heading">
           <p class="section-kicker">Citation</p>
-          <h2>Provisional BibTeX</h2>
+          <h2>BibTeX</h2>
           <p>This entry will be updated when the final proceedings metadata becomes available.</p>
         </div>
         <div class="citation-block">
