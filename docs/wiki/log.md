@@ -2,6 +2,14 @@
 
 Newest entries appear first.
 
+## 2026-06-26
+
+- Removed lab-specific author affiliations from the site; all five authors are
+  shown under the University of Michigan Department of Robotics only.
+- Moved the five-minute presentation video to the first main page section and
+  updated the public code link to
+  [UM-ARM-Lab/stembot](https://github.com/UM-ARM-Lab/stembot).
+
 ## 2026-06-25
 
 - Replaced the affiliation placeholder with linked Michigan Robotics, ARM Lab,

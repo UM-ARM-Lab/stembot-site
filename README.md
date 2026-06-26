@@ -38,8 +38,13 @@ figures, images, posters, H.264 videos, and the paper PDF to `static/media/`.
 
 - Add approved funding and acknowledgment language.
 - Replace the local presentation video link when the YouTube upload is ready.
-- Activate the code and arXiv links after public release.
+- Activate the arXiv link after public release.
 - Replace the provisional BibTeX entry with final proceedings metadata.
+
+## Code
+
+The public code release is available at
+[UM-ARM-Lab/stembot](https://github.com/UM-ARM-Lab/stembot).
 
 ## Website License
 

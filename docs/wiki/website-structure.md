@@ -5,14 +5,14 @@
 The single-page site follows this order:
 
 1. Publication header and resources
-2. Abstract, contributions, and key results
-3. Integrated system architecture
-4. Compliant hardware and assembly
-5. Geometric and semantic perception
-6. Manifold-constrained motion planning
-7. Traversal capability videos
-8. Four autonomous plant experiments
-9. Full presentation video
+2. Full presentation video
+3. Abstract, contributions, and key results
+4. Integrated system architecture
+5. Compliant hardware and assembly
+6. Geometric and semantic perception
+7. Manifold-constrained motion planning
+8. Traversal capability videos
+9. Four autonomous plant experiments
 10. Provisional citation and publication TODOs
 
 The visual direction is a neutral IEEE-style research site with restrained
@@ -59,11 +59,9 @@ assets under `static/media/`.
 
 - All five authors are affiliated with the University of Michigan Department
   of Robotics.
-- Zachary Charlick and Dmitry Berenson are additionally affiliated with the
-  Autonomous Robotic Manipulation Lab (ARM).
-- Nilay Roy Choudhury and Xiaonan Huang are additionally affiliated with the
-  Hybrid Dynamic Robotics Lab.
+- The public code release is
+  [UM-ARM-Lab/stembot](https://github.com/UM-ARM-Lab/stembot).
 - Funding and acknowledgment wording remains a visible TODO.
-- Code and arXiv are marked “Coming soon.”
+- arXiv is marked “Coming soon.”
 - No dataset-release link or patent-status wording is shown.
 - BibTeX is explicitly provisional until proceedings metadata is available.
