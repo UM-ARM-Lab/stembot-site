@@ -22,14 +22,14 @@ for Under-Canopy Plant Navigation.”**
 
 ## Repository Baseline
 
-As of 2026-06-24:
+As of 2026-07-09:
 
 - The website is a static single-page publication site using HTML, CSS,
   JavaScript, and Bulma layout utilities.
 - Raw author-provided assets are local build inputs under
   `static/new_images/`, `static/new_videos/`, and `static/paper/`.
 - Browser-ready derivatives are generated under `static/media/`.
-- The remaining visible publication TODOs are funding and acknowledgments,
-  arXiv link, and final BibTeX metadata.
+- The remaining visible publication TODOs are the arXiv link/citation and final
+  IROS BibTeX metadata.
 - The public code release is
   [UM-ARM-Lab/stembot](https://github.com/UM-ARM-Lab/stembot).

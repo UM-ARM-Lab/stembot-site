@@ -2,6 +2,15 @@
 
 Newest entries appear first.
 
+## 2026-07-09
+
+- Replaced the funding TODO with author-provided acknowledgement language for
+  ONR Grant N00014-24-1-2036, NSF grants IIS-2113401 and IIS-2220876, and USDA
+  NIFA National Robotics Initiative project award no. 2026-67021-46039.
+- Removed the provisional IROS BibTeX from the public citation section; the site
+  now states that the arXiv preprint citation and BibTeX are coming soon, with
+  final IROS proceedings metadata to follow when available.
+
 ## 2026-06-26
 
 - Removed lab-specific author affiliations from the site; all five authors are

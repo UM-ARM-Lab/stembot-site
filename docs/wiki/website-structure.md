@@ -13,7 +13,7 @@ The single-page site follows this order:
 7. Manifold-constrained motion planning
 8. Traversal capability videos
 9. Four autonomous plant experiments
-10. Provisional citation and publication TODOs
+10. Citation status and publication TODOs
 
 The visual direction is a neutral IEEE-style research site with restrained
 Michigan blue, maize, and botanical-green accents.
@@ -61,7 +61,10 @@ assets under `static/media/`.
   of Robotics.
 - The public code release is
   [UM-ARM-Lab/stembot](https://github.com/UM-ARM-Lab/stembot).
-- Funding and acknowledgment wording remains a visible TODO.
-- arXiv is marked “Coming soon.”
+- Funding and acknowledgment wording is author-provided and shown on the site:
+  ONR Grant N00014-24-1-2036, NSF grants IIS-2113401 and IIS-2220876, and USDA
+  NIFA National Robotics Initiative project award no. 2026-67021-46039.
+- arXiv is marked “Coming soon,” with the citation section reserved for the
+  future arXiv link and BibTeX.
 - No dataset-release link or patent-status wording is shown.
-- BibTeX is explicitly provisional until proceedings metadata is available.
+- Final IROS BibTeX/proceedings metadata is not shown until available.
