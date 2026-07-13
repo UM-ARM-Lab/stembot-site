@@ -671,16 +671,6 @@ a {
   position: relative;
 }
 
-.citation-placeholder {
-  background: #0a1c2e;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--radius);
-  color: #e6eef5;
-  font-size: 1rem;
-  font-weight: 750;
-  padding: 1.25rem 1.5rem;
-}
-
 .citation-block pre {
   background: transparent;
   color: #e6eef5;

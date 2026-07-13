@@ -2,6 +2,13 @@
 
 Newest entries appear first.
 
+## 2026-07-13
+
+- Updated the public site to link to the live arXiv preprint,
+  [arXiv:2607.07873](https://arxiv.org/abs/2607.07873), and restored the
+  citation block with the arXiv BibTeX as the interim citation until final IROS
+  proceedings metadata is available.
+
 ## 2026-07-09
 
 - Replaced the funding TODO with author-provided acknowledgement language for

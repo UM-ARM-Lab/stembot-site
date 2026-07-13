@@ -64,7 +64,7 @@ assets under `static/media/`.
 - Funding and acknowledgment wording is author-provided and shown on the site:
   ONR Grant N00014-24-1-2036, NSF grants IIS-2113401 and IIS-2220876, and USDA
   NIFA National Robotics Initiative project award no. 2026-67021-46039.
-- arXiv is marked “Coming soon,” with the citation section reserved for the
-  future arXiv link and BibTeX.
+- arXiv links to [arXiv:2607.07873](https://arxiv.org/abs/2607.07873), and the
+  citation section shows the arXiv BibTeX as an interim citation.
 - No dataset-release link or patent-status wording is shown.
 - Final IROS BibTeX/proceedings metadata is not shown until available.
